@@ -6,6 +6,12 @@ export const DELETE_KONTAK = "DELETE_KONTAK"
 export const DETAIL_KONTAK = "DETAIL_KONTAK"
 export const UPDATE_KONTAK = "UPDATE_KONTAK"
 
+// local
+// const url = "http://localhost:3000/"
+
+// deploy
+const url = "https://my-json-server.typicode.com/MhmmdSyahputra/react-redux-dasar/"
+
 export const getListKontak = () => {
     // console.log("2. Masuk Action");
     return (dispatch) => {
@@ -23,7 +29,7 @@ export const getListKontak = () => {
         //get api
         axios({
                 method: 'GET',
-                url: 'http://localhost:3000/kontaks',
+                url: url + 'kontaks',
                 timeout: 120000
             })
             .then((response) => {
@@ -70,7 +76,7 @@ export const addKontak = (data) => {
         //get api
         axios({
                 method: 'POST',
-                url: 'http://localhost:3000/kontaks',
+                url: url + 'kontaks',
                 timeout: 120000,
                 data: data
             })
@@ -118,7 +124,7 @@ export const deleteKontak = (id) => {
         //get api
         axios({
                 method: 'DELETE',
-                url: 'http://localhost:3000/kontaks/' + id,
+                url: url + 'kontaks/' + id,
                 timeout: 120000,
             })
             .then((response) => {
@@ -176,7 +182,7 @@ export const updateKontak = (data) => {
         //get api
         axios({
                 method: 'PUT',
-                url: 'http://localhost:3000/kontaks/' + data.id,
+                url: url + 'kontaks/' + data.id,
                 timeout: 120000,
                 data: data
             })
