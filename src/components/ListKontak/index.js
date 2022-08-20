@@ -28,20 +28,20 @@ const ListKontak = () => {
             <h4 className='text-start'>All Kontak</h4>
             <hr />
             <div className="row">
-                <div className="col-md-4 fw-bold mb-3">Nama</div>
-                <div className="col-md-4 fw-bold mb-3">No Hp</div>
-                <div className="col-md-4 fw-bold mb-3">Action</div>
+                <div className="col fw-bold mb-3">Nama</div>
+                <div className="col fw-bold mb-3">No Hp</div>
+                <div className="col fw-bold mb-3">Action</div>
             </div>
             <div>
                 {getListKontakResult ? (
                     getListKontakResult.map((kontak) => {
                         return (
-                            <div className="row" key={kontak.id}>
-                                <div className="col-md-4 mb-2">{kontak.nama}</div>
-                                <div className="col-md-4 mb-2">{kontak.nohp}</div>
-                                <div className="col-md-4 mb-2">
-                                    <button onClick={() => dispatch(detailKontak(kontak))} className='btn btn-warning me-3'>Edit</button>
-                                    <button onClick={() => dispatch(deleteKontak(kontak.id))} className='btn btn-danger'>Hapus</button>
+                            <div className="row mb-4" key={kontak.id}>
+                                <div className="col mb-2">{kontak.nama}</div>
+                                <div className="col mb-2">{kontak.nohp}</div>
+                                <div className="col mb-2">
+                                    <button onClick={() => dispatch(detailKontak(kontak))} className='btn text-warning m-1 fw-bold' style={{ width: '80px', border: '2px solid white' }} >Edit</button>
+                                    <button onClick={() => dispatch(deleteKontak(kontak.id))} className='btn text-danger m-1 fw-bold' style={{ width: '80px', border: '2px solid white' }} >Hapus</button>
                                 </div>
                             </div>
                         )

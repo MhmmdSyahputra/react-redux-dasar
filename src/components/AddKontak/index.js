@@ -61,14 +61,14 @@ export const AddKontak = () => {
             <form className='form-group mb-5' onSubmit={(e) => handleSubmit(e)}>
                 <div className="row mb-3">
                     <div className="col">
-                        <input type="text" className='form-control' value={nama} onChange={(e) => setNama(e.target.value)} placeholder='Nama . . .' />
+                        <input type="text" className='form-control text-light' value={nama} onChange={(e) => setNama(e.target.value)} placeholder='Nama . . .' style={{ background: 'transparent', border: '3px solid white' }} />
                     </div>
                     <div className="col">
-                        <input type="number" className='form-control' value={nohp} onChange={(e) => setNohp(e.target.value)} placeholder='No Hp . . .' />
+                        <input type="number" className='form-control text-light' value={nohp} onChange={(e) => setNohp(e.target.value)} placeholder='No Hp . . .' style={{ background: 'transparent', border: '3px solid white' }} />
                     </div>
                 </div>
                 <div className='text-end'>
-                    <button className='btn btn-success text-end'>Simpan</button>
+                    <button className='btn text-success fw-bold text-end' style={{ width: '80px', border: '2px solid white' }} >Simpan</button>
                 </div>
             </form>
         </div>
