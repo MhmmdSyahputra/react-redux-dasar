@@ -1,0 +1,29 @@
+{
+  "kontaks": [
+    {
+      "id": 2,
+      "nama": "nanda",
+      "nohp": "01823123"
+    },
+    {
+      "id": 3,
+      "nama": "ariandi",
+      "nohp": "0817236812"
+    },
+    {
+      "nama": "nisa",
+      "nohp": "082371812",
+      "id": 4
+    },
+    {
+      "nama": "tiara",
+      "nohp": "08238243",
+      "id": 5
+    },
+    {
+      "nama": "deni",
+      "nohp": "082937312",
+      "id": 6
+    }
+  ]
+}
