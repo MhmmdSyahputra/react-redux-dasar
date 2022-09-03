@@ -7,10 +7,10 @@ export const DETAIL_KONTAK = "DETAIL_KONTAK"
 export const UPDATE_KONTAK = "UPDATE_KONTAK"
 
 // local
-// const url = "http://localhost:3000/"
+const url = "http://localhost:5000/"
 
 // deploy
-const url = "https://my-json-server.typicode.com/MhmmdSyahputra/react-redux-dasar/"
+// const url = "https://my-json-server.typicode.com/MhmmdSyahputra/react-redux-dasar/"
 
 export const getListKontak = () => {
     // console.log("2. Masuk Action");
